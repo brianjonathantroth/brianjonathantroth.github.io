@@ -24,7 +24,29 @@
   .id-hero .hero-tagline { color: var(--ink-mid); font-weight: 400; }
   .id-hero .hero-tagline strong { color: var(--navy); }
   .id-hero .hero-sub { color: var(--ink-lt); }
-  .id-back {
+  .id-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 56px;
+    align-items: center;
+  }
+  .id-hero-photo {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    box-shadow: var(--shadow-md);
+    aspect-ratio: 4 / 5;
+  }
+  .id-hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .id-hero-grid { grid-template-columns: 1fr; gap: 32px; }
+    .id-hero-photo { max-width: 320px; margin: 0 auto; }
+  }
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -92,12 +114,19 @@
 </nav>
 
 <header class="id-hero">
-  <div class="container hero-inner">
+  <div class="container">
     <a href="index.html" class="id-back">&larr; Back to main portfolio</a>
-    <p class="hero-eyebrow">Instructional design &amp; learning experience</p>
-    <h1 class="hero-name" style="font-size:clamp(2rem,5vw,3.25rem);">Jonathan Troth, PhD</h1>
-    <p class="hero-tagline">ADDIE-based curriculum design, custom-built interactive modules, and training that changes what people actually do on the job, not just what they click through.</p>
-    <p class="hero-sub">This page collects the ID and L&amp;D work most relevant to instructional design, curriculum development, and training roles. For the full picture, including health communications and research, see the main portfolio.</p>
+    <div class="id-hero-grid">
+      <div class="hero-inner" style="max-width:none;">
+        <p class="hero-eyebrow">Instructional design &amp; learning experience</p>
+        <h1 class="hero-name" style="font-size:clamp(2rem,5vw,3.25rem);">Jonathan Troth, PhD</h1>
+        <p class="hero-tagline">ADDIE-based curriculum design, custom-built interactive modules, and training that changes what people actually do on the job, not just what they click through.</p>
+        <p class="hero-sub">This page collects the ID and L&amp;D work most relevant to instructional design, curriculum development, and training roles. For the full picture, including health communications and research, see the main portfolio.</p>
+      </div>
+      <div class="id-hero-photo">
+        <img src="images/headshot.png" alt="Jonathan Troth">
+      </div>
+    </div>
   </div>
 </header>
 
