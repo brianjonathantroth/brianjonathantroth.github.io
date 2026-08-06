@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan Troth, PhD — Instructional Design & Learning Experience</title>
+<meta name="description" content="Instructional design portfolio: ADDIE-based curriculum design, custom-built interactive learning modules, and real-world training outcomes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .id-hero {
+    min-height: 62vh;
+    padding: 140px 0 64px;
+  }
+  .id-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: .85rem;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 28px;
+  }
+  .id-back:hover { color: #fff; }
+
+  .embed-block { margin-bottom: 72px; }
+  .embed-head { max-width: 680px; margin-bottom: 24px; }
+  .embed-eyebrow {
+    font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+    color: #7c3aed; margin-bottom: 10px;
+  }
+  .embed-title { font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+  .embed-desc { color: var(--ink-mid); font-size: .98rem; line-height: 1.65; }
+  .embed-outcome {
+    display: inline-block; background: #f5f3ff; border-left: 3px solid #7c3aed;
+    color: #3b0764; font-size: .85rem; font-weight: 600; padding: 10px 14px;
+    border-radius: 0 8px 8px 0; margin-top: 14px;
+  }
+  .embed-frame {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .embed-frame iframe { display: block; width: 100%; border: none; }
+
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .support-card img { width: 100%; height: 170px; object-fit: cover; background: var(--blue-pale); }
+  .support-card .card-body { padding: 24px; }
+</style>
+</head>
+<body>
+
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Jonathan Troth<span>, PhD</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Main portfolio</a></li>
+      <li><a href="#embeds">Featured work</a></li>
+      <li><a href="#more">More work</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="hero" class="id-hero">
+  <div class="container hero-inner">
+    <a href="index.html" class="id-back">&larr; Back to main portfolio</a>
+    <p class="hero-eyebrow">Instructional design &amp; learning experience</p>
+    <h1 class="hero-name" style="font-size:clamp(2rem,5vw,3.25rem);">Jonathan Troth, PhD</h1>
+    <p class="hero-tagline">ADDIE-based curriculum design, custom-built interactive modules, and training that changes what people actually do on the job, not just what they click through.</p>
+    <p class="hero-sub">This page collects the ID and L&amp;D work most relevant to instructional design, curriculum development, and training roles. For the full picture, including health communications and research, see the main portfolio.</p>
+  </div>
+</header>
+
+<main>
+<section id="embeds" style="padding-top:72px;">
+  <div class="container">
+    <p class="section-label">Featured, interactive work</p>
+    <h2 class="section-title">See it working, not just described</h2>
+    <p class="section-intro">Two projects embedded directly below, fully interactive, right on this page.</p>
+
+    <div class="embed-block">
+      <div class="embed-head">
+        <p class="embed-eyebrow">Custom-coded, live product</p>
+        <h3 class="embed-title">Doctorat WL — Teacher Walkthrough</h3>
+        <p class="embed-desc">A client enablement module I designed and hand-coded for Doctorat WL, a text-leveling and worksheet-generation app I built for world language teachers. Includes a real dashboard walkthrough, a hotspot practice screen using the live product UI, and a scored knowledge check, no authoring tool, built from scratch in HTML, CSS, and JavaScript.</p>
+        <span class="embed-outcome">Live product · self-built · zero third-party authoring tools</span>
+      </div>
+      <div class="embed-frame">
+        <iframe src="doctoratwl-walkthrough.html" height="620" title="Doctorat WL teacher walkthrough, interactive module" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="embed-block">
+      <div class="embed-head">
+        <p class="embed-eyebrow">Interactive image training</p>
+        <h3 class="embed-title">Medication Packing — Hotspot Training</h3>
+        <p class="embed-desc">A workspace-based training module for a pharmaceutical delivery startup experiencing rapid growth. Built from a single photograph of a packing station, with multiple-choice questions embedded in hotspots guiding new employees through a safe, accurate packing procedure.</p>
+        <span class="embed-outcome">Reduced onboarding supervision time · improved procedural accuracy</span>
+      </div>
+      <div class="embed-frame">
+        <iframe src="https://view.genially.com/689a392ebaa45e9847690f67" height="560" title="Medication packing hotspot training module" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="more">
+  <div class="container">
+    <p class="section-label">More work</p>
+    <h2 class="section-title">Additional instructional design samples</h2>
+    <p class="section-intro">Documented projects spanning ADDIE methodology, multi-format learning paths, and compliance training design.</p>
+
+    <div class="support-grid">
+      <div class="work-card support-card">
+        <div class="card-stripe learning"></div>
+        <div class="card-body">
+          <p class="card-category learning">ADDIE · Needs analysis</p>
+          <h3 class="card-title">Nonprofit Bias Training — ADDIE Storyboard</h3>
+          <p class="card-desc">Conducted a full needs analysis with the CEO, audited existing materials, and designed a custom interactive course for scholarship judges to identify and mitigate unconscious bias in an international review process.</p>
+          <p class="card-outcome learning">$375,000 scholarship fund distributed more equitably</p>
+          <a class="card-link" href="https://drive.google.com/open?id=1NB0D11XKT851CvRxpmW1hpeSJWAChuBtcEzAWaelKJc" target="_blank" rel="noopener">View storyboard document &rarr;</a>
+        </div>
+      </div>
+
+      <div class="work-card support-card">
+        <div class="card-stripe learning"></div>
+        <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQUX1ivJLxHMBmLlriniLvH5nmfrMH2iebzTvlDOubGTrRO9UPkHCyCANQI2fQfTTU1EUUbinqEPPVnUWW-_C_-Mt_weaoAl8rpzpEjK_I62mwdhc9j_HJvwU-OK19nNPlOaxaRXNmlalEYZCCLM-afuqfbgRP6174iDrqj2iLcVbdrBHf2kHUmfijkAxfI=w1280" alt="Host Hub concept site preview" loading="lazy">
+        <div class="card-body">
+          <p class="card-category learning">Multi-format learning path</p>
+          <h3 class="card-title">Host Hub — Onboarding Concept</h3>
+          <p class="card-desc">A concept onboarding site for prospective Airbnb hosts, combining static guidance, hover-triggered hotspot instruction, embedded video training, and a supporting checklist document into one coherent learner journey.</p>
+          <a class="card-link" href="https://sites.google.com/view/hosthub/home" target="_blank" rel="noopener">View concept site &rarr;</a>
+        </div>
+      </div>
+
+      <div class="work-card support-card">
+        <div class="card-stripe learning"></div>
+        <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWnlm9LVHgd_RXGHnlnWIFPr2nLiTcc2yshVg30Nfm9bdDPTpIAsMCTNcl_nuHrnUsKis8_6aqwaTwkCb2albrfMeFcmv9zFoGGT34PGB49CBLRrOe5wCoF2_FN3RcQdAobrupVXEcj0J50jpZrEEtb8iFSytH_H1efL_W4jCRRzyqPaiRKXaiXfgfH=w1280" alt="iHerb Supplier Code of Conduct training preview" loading="lazy">
+        <div class="card-body">
+          <p class="card-category learning">Compliance training</p>
+          <h3 class="card-title">Supplier Code of Conduct Training</h3>
+          <p class="card-desc">A scalable compliance training concept for a global supplier network, covering workplace safety, fair labor standards, and anti-trafficking policy, including a visual hazard-identification exercise.</p>
+          <a class="card-link" href="https://sites.google.com/view/iherbcompliance/home" target="_blank" rel="noopener">View prototype &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-copy">&copy; 2026 Jonathan Troth, PhD</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="index.html">Main portfolio</a>
+      <a href="https://www.linkedin.com/in/brian-jonathan-troth" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
