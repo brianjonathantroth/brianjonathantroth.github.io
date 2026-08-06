@@ -23,8 +23,9 @@
   }
   .id-back:hover { color: #fff; }
 
-  .embed-block { margin-bottom: 72px; }
-  .embed-head { max-width: 680px; margin-bottom: 24px; }
+  #embeds .section-intro { margin-bottom: 32px; }
+  .embed-block { margin-bottom: 56px; }
+  .embed-head { max-width: 680px; margin-bottom: 20px; }
   .embed-eyebrow {
     font-size: .7rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
     color: #7c3aed; margin-bottom: 10px;
@@ -49,8 +50,20 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
   }
-  .support-card img { width: 100%; height: 170px; object-fit: cover; background: var(--blue-pale); }
   .support-card .card-body { padding: 24px; }
+  .card-header {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+  }
+  .card-header .card-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: #7c3aed; color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 1.1rem; flex-shrink: 0;
+  }
 </style>
 </head>
 <body>
@@ -130,7 +143,7 @@
 
       <div class="work-card support-card">
         <div class="card-stripe learning"></div>
-        <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQUX1ivJLxHMBmLlriniLvH5nmfrMH2iebzTvlDOubGTrRO9UPkHCyCANQI2fQfTTU1EUUbinqEPPVnUWW-_C_-Mt_weaoAl8rpzpEjK_I62mwdhc9j_HJvwU-OK19nNPlOaxaRXNmlalEYZCCLM-afuqfbgRP6174iDrqj2iLcVbdrBHf2kHUmfijkAxfI=w1280" alt="Host Hub concept site preview" loading="lazy">
+        <div class="card-header"><div class="card-icon">HH</div></div>
         <div class="card-body">
           <p class="card-category learning">Multi-format learning path</p>
           <h3 class="card-title">Host Hub — Onboarding Concept</h3>
@@ -141,7 +154,7 @@
 
       <div class="work-card support-card">
         <div class="card-stripe learning"></div>
-        <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQWnlm9LVHgd_RXGHnlnWIFPr2nLiTcc2yshVg30Nfm9bdDPTpIAsMCTNcl_nuHrnUsKis8_6aqwaTwkCb2albrfMeFcmv9zFoGGT34PGB49CBLRrOe5wCoF2_FN3RcQdAobrupVXEcj0J50jpZrEEtb8iFSytH_H1efL_W4jCRRzyqPaiRKXaiXfgfH=w1280" alt="iHerb Supplier Code of Conduct training preview" loading="lazy">
+        <div class="card-header"><div class="card-icon">CC</div></div>
         <div class="card-body">
           <p class="card-category learning">Compliance training</p>
           <h3 class="card-title">Supplier Code of Conduct Training</h3>
