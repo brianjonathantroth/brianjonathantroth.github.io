@@ -12,16 +12,24 @@
   .id-hero {
     min-height: 62vh;
     padding: 140px 0 64px;
+    background: linear-gradient(160deg, var(--blue-pale) 0%, #ffffff 60%);
   }
+  .id-hero::before { display: none; }
+  .id-hero .hero-eyebrow { color: var(--blue); }
+  .id-hero .hero-eyebrow::before { background: var(--blue); }
+  .id-hero .hero-name { color: var(--navy); }
+  .id-hero .hero-tagline { color: var(--ink-mid); font-weight: 400; }
+  .id-hero .hero-tagline strong { color: var(--navy); }
+  .id-hero .hero-sub { color: var(--ink-lt); }
   .id-back {
     display: inline-flex;
     align-items: center;
     gap: 6px;
     font-size: .85rem;
-    color: rgba(255,255,255,.6);
+    color: var(--ink-lt);
     margin-bottom: 28px;
   }
-  .id-back:hover { color: #fff; }
+  .id-back:hover { color: var(--navy); }
 
   #embeds .section-intro { margin-bottom: 32px; }
   .embed-block { margin-bottom: 56px; }
