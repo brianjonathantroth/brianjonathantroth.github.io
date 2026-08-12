@@ -51,6 +51,7 @@
     .id-hero-grid { grid-template-columns: 1fr; gap: 32px; }
     .id-hero-photo { max-width: 320px; margin: 0 auto; }
   }
+  .id-back {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -101,6 +102,24 @@
     display: flex; align-items: center; justify-content: center;
     font-weight: 800; font-size: 1.1rem; flex-shrink: 0;
   }
+
+  /* Writing samples section */
+  #writing .section-intro { margin-bottom: 32px; }
+  .writing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+  .writing-card .card-body { padding: 24px; }
+  .writing-quote {
+    border-left: 3px solid var(--rule);
+    padding-left: 16px;
+    margin: 16px 0;
+    color: var(--ink-mid);
+    font-size: .95rem;
+    line-height: 1.65;
+    font-style: italic;
+  }
 </style>
 </head>
 <body>
@@ -111,6 +130,7 @@
     <ul class="nav-links" role="list">
       <li><a href="index.html">Main portfolio</a></li>
       <li><a href="#embeds">Featured work</a></li>
+      <li><a href="#writing">Writing samples</a></li>
       <li><a href="#more">More work</a></li>
       <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
     </ul>
@@ -171,6 +191,48 @@
       </div>
       <div class="embed-frame">
         <iframe src="https://view.genially.com/689a392ebaa45e9847690f67" height="560" title="Medication packing hotspot training module" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="container">
+    <p class="section-label">Writing samples</p>
+    <h2 class="section-title">Curriculum &amp; content writing</h2>
+    <p class="section-intro">Teen-audience nonfiction passages written for Teacher's Discovery's Voix du Monde French curriculum, distributed to classrooms nationwide. Each passage pairs original expository writing with comprehension and comparative-analysis questions.</p>
+
+    <div class="writing-grid">
+      <div class="work-card writing-card">
+        <div class="card-stripe learning"></div>
+        <div class="card-body">
+          <p class="card-category learning">Curriculum · Teen-audience writing</p>
+          <h3 class="card-title">History of La Réunion</h3>
+          <p class="card-desc">A passage tracing La Réunion's colonial trade history into its history of slavery and indentured servitude, paired with comprehension questions and a comparative-analysis prompt asking students to connect it to enslaved peoples' histories elsewhere in the world.</p>
+          <blockquote class="writing-quote">"As the French cultivated its land, they imported enslaved Africans from the continent's eastern coast. These enslaved people worked on the coffee and sugar plantations... The slaves in La Réunion maintained many of their cultural traditions, adding them to Catholic traditions brought by the colonizers. This resulted in a slave culture that was unique to La Réunion."</blockquote>
+          <div class="skill-tags" style="margin-bottom:14px;">
+            <span class="tag">Teen-audience nonfiction</span>
+            <span class="tag">Sourced research</span>
+            <span class="tag">Comparative analysis</span>
+          </div>
+          <p class="card-outcome learning">Voix du Monde curriculum, Teacher's Discovery</p>
+        </div>
+      </div>
+
+      <div class="work-card writing-card">
+        <div class="card-stripe learning"></div>
+        <div class="card-body">
+          <p class="card-category learning">Curriculum · Teen-audience writing</p>
+          <h3 class="card-title">Carnival in Martinique</h3>
+          <p class="card-desc">A passage on the origins and modern form of Martinique's Carnival tradition, tracing its roots to celebrations held by enslaved people through to its present-day parades, paired with multiple-choice comprehension questions.</p>
+          <blockquote class="writing-quote">"In Martinique, Carnival originated in the dances and parties enslaved people threw. These people were prohibited from joining mainstream celebrations. It was only after France abolished slavery in all of its regions and territories in 1848 that Carnival grew in popularity... The Martiniquais emphasize creativity and deny conventions."</blockquote>
+          <div class="skill-tags" style="margin-bottom:14px;">
+            <span class="tag">Teen-audience nonfiction</span>
+            <span class="tag">Sourced research</span>
+            <span class="tag">Cultural history</span>
+          </div>
+          <p class="card-outcome learning">Voix du Monde curriculum, Teacher's Discovery</p>
+        </div>
       </div>
     </div>
   </div>
